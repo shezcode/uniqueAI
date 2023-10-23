@@ -15,3 +15,11 @@ La idea del proyecto es crear una landing page para una startup basada en IA.
   * Light-grey: #282828;
   * Dark: #121212;
   * Purple: #6C63FF;
+  
+  
+# TODO
+* Product section - Carrusel con imagenes de la empresa.
+* About us section
+* Pricing section
+* Contact Form
+* Footer with social media links

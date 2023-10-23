@@ -56,6 +56,7 @@ a {
 }
 
 nav {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -80,6 +81,18 @@ main {
 h1 {
   font-size: 40px;
   line-height: 1.2;
+}
+
+h2 {
+  font-size: 34px;
+  background: -webkit-linear-gradient(#ffffff, #6c63ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+::selection {
+  background-color: #6c63ff;
 }
 
 .main-section {
