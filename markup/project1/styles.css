@@ -83,17 +83,17 @@ h1 {
   line-height: 1.2;
 }
 
-h2 {
-  font-size: 34px;
-  background: -webkit-linear-gradient(#ffffff, #6c63ff);
-  -webkit-background-clip: text;
+.text-gradient {
+  font-size: 36px;
+  background-color: #ffffff;
+  background: linear-gradient(to right, #6c63ff, #ffffff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
-::selection {
-  background-color: #6c63ff;
-}
 
 .main-section {
   display: flex;
@@ -142,11 +142,33 @@ h2 {
   padding: 40px;
 }
 
+.product-svg {
+  width: 150px;
+  padding: 20px;
+}
+
+strong {
+  color: #6c63ff;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 1em;
+}
+
+.product-section {
+  background-color: #121212;
+  padding: 2em;
+}
+
 hr {
   height: 2px;
-  color: #404040;
-  background-color: #404040;
-  border-color: #404040;
+  color: #6c63ff;
+  background-color: #6c63ff;
+  border-color: #6c63ff;
   border: none;
 }
 
