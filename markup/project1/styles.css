@@ -84,14 +84,17 @@ h1 {
 }
 
 .text-gradient {
+  align-self: flex-start;
+  padding: 1em;
+  margin-left: 30px;
   font-size: 36px;
   background-color: #ffffff;
-  background: linear-gradient(to right, #6c63ff, #ffffff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  background-image: linear-gradient(135deg, #6c63ff 1%,#8E8FFA 49%,#B971FC 53%,#FAFBEA 100%);
 }
 
 
@@ -99,7 +102,7 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -112,6 +115,7 @@ h1 {
   height: full;
   width: 400px;
   color: #ffffff;
+  max-width: 900px;
   min-height: 20vh;
 }
 
@@ -152,16 +156,26 @@ strong {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.3);
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  padding: 1em;
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
 }
 
-.product-section {
+.about-section {
   background-color: #121212;
   padding: 2em;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  min-height: 50vh;
+  gap: 1em;
 }
 
 hr {
@@ -193,4 +207,100 @@ hr {
   transition: 0.3s ease-in-out all;
   color: #6c63ff;
 }
+.carousel {
+  padding: 1em;
+  margin: 4px;
+  width: 95vw;
+  max-width: 1200px;
+  height: 40vh;
+  overflow: hidden;
+  position: relative;
+}
+.carousel .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: changeBackground 23.2s infinite;
+  filter: blur(3px) saturate(180%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
 
+.carousel .pane {
+  max-width: 50vw;
+  max-height: 35vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  padding: 1em;
+  color: #ffffff;
+  border-radius: 12px;
+  border: 2px solid #121212;
+  position: absolute;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  z-index: 2;
+  line-height: 1.4;
+  font-size: 18px;
+  text-overflow: ellipsis;
+}
+
+
+
+.carousel .slide:nth-child(1) {
+  background-image: url('./files/pc.jpeg');
+  animation-delay: 0;
+}
+
+.carousel .slide:nth-child(2) {
+  background-image: url('./files/enterprise_level_software_image.jpg');
+  animation-delay: -5.8s;
+}
+
+
+.carousel .slide:nth-child(3) {
+  background-image: url('./files/artificial_intelligence.jpg');
+  animation-delay: -11.6s;
+}
+
+.carousel .slide:nth-child(4) {
+  background-image: url('./files/coworking.jpeg');
+  animation-delay: -17.4s;
+}
+
+.slide:hover {
+  animation-play-state: paused;
+}
+
+
+@keyframes changeBackground {
+  0%, 22%, 100% {
+    transform: translateX(0);
+    animation-timing-function: ease;
+  }
+  25% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;
+  }
+  97% {
+    transform: translateX(100%);
+    animation-timing-function: ease;
+  }
+}
+
+.product-section {
+  min-height: 40vh;
+}
+
+.pricing-section {
+  min-height: 40vh;
+  background-color: #121212;
+}
