@@ -256,12 +256,12 @@ hr {
 
 
 .carousel .slide:nth-child(1) {
-  background-image: url('./files/pc.jpeg');
+  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa');
   animation-delay: 0;
 }
 
 .carousel .slide:nth-child(2) {
-  background-image: url('./files/enterprise_level_software_image.jpg');
+  background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');
   animation-delay: -5.8s;
 }
 
@@ -298,9 +298,58 @@ hr {
 
 .product-section {
   min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;  
+  width: 500px;
+  height: 350px;
+  margin: 20px;
+  gap: 12px;
+  color: #F0EAD6;
+  border-radius: 12px;
+  border: 2px solid #F0EAD6;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.left-half {
+  background-color: #121212;
+  border-radius: 12px 0 0 12px;
+}
+
+.right-half {
+  width: 250px;
+  height: 100%;
+  background-color: #282828;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  gap: 1em;
+  font-size: 18px;
+  border-radius: 0 12px 12px 0;
+}
+
+.product-btn {
+  padding: .5em 1em;
+  border-radius: 12px;
+  width: 60%;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color: #6c63ff;
+}
+
+.product-btn:hover {
+  cursor: pointer;
 }
 
 .pricing-section {
   min-height: 40vh;
   background-color: #121212;
 }
+
+
