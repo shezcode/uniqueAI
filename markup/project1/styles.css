@@ -276,11 +276,6 @@ hr {
   animation-delay: -17.4s;
 }
 
-.slide:hover {
-  animation-play-state: paused;
-}
-
-
 @keyframes changeBackground {
   0%, 22%, 100% {
     transform: translateX(0);
