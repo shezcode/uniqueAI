@@ -369,29 +369,39 @@ hr {
 .pricing-table {
   display: flex;
   flex-direction: row;
+  border: 2px solid green;
 }
 
 .pricing-card {
   border: 2px solid white;
   margin: 1em;
-  padding: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 33%;
 }
 
 
 .price {
   display: flex;
   flex-direction: column;
+  border: 2px solid red;
+  width: 100%;
+  height: 100%;
 }
 
 .header {
+  background: #B971FC;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .grey {
-
+  background: #282828;
 }
 
 
