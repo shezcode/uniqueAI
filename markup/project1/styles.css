@@ -211,7 +211,8 @@ hr {
   transition: 0.3s ease-in-out all;
   color: #6c63ff;
 }
-.carousel {
+
+.carousel2 {
   padding: 1em;
   margin: 4px;
   width: 95vw;
@@ -220,27 +221,11 @@ hr {
   overflow: hidden;
   position: relative;
 }
-.carousel .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  animation: changeBackground 23.2s infinite;
-  filter: blur(3px) saturate(180%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
 
-.carousel .pane {
+.pane {
   max-width: 50vw;
   max-height: 35vh;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.55);
   display: flex;
   text-align: start;
   flex-direction: column;
@@ -251,48 +236,120 @@ hr {
   position: absolute;
   margin: auto;
   top: 0; left: 0; bottom: 0; right: 0;
-  z-index: 2;
+  z-index: 92;
   line-height: 1.4;
   font-size: 18px;
   text-overflow: ellipsis;
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    height: 800px;
+    width: 2000px;
+    object-fit: cover;
 }
 
 
-
-.carousel .slide:nth-child(1) {
-  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa');
-  animation-delay: 0;
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    width: 40px;
+    z-index: 10;
 }
 
-.carousel .slide:nth-child(2) {
-  background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');
-  animation-delay: -5.8s;
+.carousel-control.prev {
+    left: 2%;
 }
 
-
-.carousel .slide:nth-child(3) {
-  background-image: url('./files/artificial_intelligence.jpg');
-  animation-delay: -11.6s;
+.carousel-control.next {
+    right: 2%;
 }
 
-.carousel .slide:nth-child(4) {
-  background-image: url('./files/coworking.jpeg');
-  animation-delay: -17.4s;
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
 }
 
-@keyframes changeBackground {
-  0%, 22%, 100% {
-    transform: translateX(0);
-    animation-timing-function: ease;
-  }
-  25% {
-    transform: translateX(-100%);
-    animation-timing-function: step-end;
-  }
-  97% {
-    transform: translateX(100%);
-    animation-timing-function: ease;
-  }
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #6c63ff;
 }
 
 .product-section {
