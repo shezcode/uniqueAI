@@ -88,9 +88,6 @@ h1 {
 }
 
 .text-gradient {
-  align-self: flex-start;
-  padding: 1em;
-  margin-left: 30px;
   font-size: 36px;
   background-color: #ffffff;
   background-clip: text;
@@ -202,7 +199,7 @@ hr {
 }
 
 .contact-btn:hover {
-  transform: scale(1.1);
+  transform: scale(105%);
   transition: 0.3s ease-in-out all;
   cursor: pointer;
 }
@@ -364,14 +361,18 @@ hr {
   justify-content: center;
   height: 100%;
   gap: 1em;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
 
+.product-section h2 {
+  margin: 20px;
 }
 
 .product {
   display: flex;
   flex-direction: row;
-  width: 500px;
-  height: 350px;
+  width: 600px;
   margin: 20px;
   gap: 12px;
   color: #F0EAD6;
@@ -384,20 +385,30 @@ hr {
   align-self: end;
 }
 
+.left-half img {
+  width: 80%;
+  height: 80%;
+}
+
 .left-half {
   background-color: #121212;
   border-radius: 12px 0 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 40%;
 }
 
 .right-half {
-  width: 250px;
+  width: 60%;
   height: 100%;
   background-color: #282828;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: start;
   gap: 1em;
   font-size: 18px;
   border-radius: 0 12px 12px 0;
@@ -412,6 +423,8 @@ hr {
   background-color: #6c63ff;
 }
 
+
+
 .product-btn:hover {
   cursor: pointer;
 }
@@ -424,12 +437,12 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 30px;
 }
 
 .pricing-table {
   display: flex;
   flex-direction: row;
-  border: 2px solid green;
 }
 
 .pricing-card {
@@ -439,27 +452,279 @@ hr {
   align-items: center;
   justify-content: center;
   width: 33%;
+  border-radius: 12px;
+  transition: 0.3s all ease-in-out;
 }
 
 
 .price {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
-  width: 100%;
+  width: 90%;
   height: 100%;
+  padding: 0px;
+  align-items: center;
+  text-align: center;
 }
 
 .header {
-  background: #B971FC;
-  width: 100%;
-  height: 100%;
+  background: #6c63ff;
+  margin-top: 1em;
+  width: 90%;
+  height: 14vh;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  border-radius: 12px;
+  border: 1px solid #181818;
+  font-size: larger;
+  font-family: 'Roboto', sans-serif;
 }
+
 
 .grey {
   background: #282828;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-btn {
+  width: 90%;
+  background: #282828;
+  height: 8vh;
+  margin-bottom: 1em;
+  border: none;
+  color: #fefefe;
+  border-radius: 12px;
+  font-size: larger;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.pricing-btn:hover {
+  cursor: pointer;
+}
+
+.pricing-card:hover {
+  transform: scale(102%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.contact {
+  margin: 2em;
+  background-color: #181818;
+  border-radius: 12px;
+  border: 2px solid #6c63ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #fefefe;
+  gap: 1em;
+}
+
+.contact-form input,
+textarea {
+  background-color: #282828;
+  outline: none;
+  border: none;
+  min-height: 30px;
+  resize: none;
+  padding: 1em;
+  color: #fefefe;
+  font-size: large;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #6c63ff;
+}
+
+.form-btn {
+  border: none;
+  background-color: #282828;
+  padding: 1em 2em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 8px;
+  color: #6c63ff;
+  font-size: large;
+  transition: 0.3s all ease-in-out;
+  border: 2px solid #6c63ff;
+}
+
+.form-btn:hover {
+  cursor: pointer;
+  background-color: #6c63ff;
+  color: #fefefe;
+  transform: scale(105%);
+}
+
+.heading-line {
+  line-height: 1;
+  display: inline-flex;
+  position: relative;
+  text-align: center;
+}
+
+.heading-line::before {
+  line-height: 1;
+  display: inline-flex;
+  position: absolute;
+  color: #fff;
+  pointer-events: none;
+  width: 100%;
+}
+
+.heading-line-gradient {
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* 1st heading gradient */
+@keyframes first_heading_gradient {
+
+  0%,
+  16.667% {
+    opacity: 1;
+  }
+
+  33.333%,
+  83.333% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 1st heading white text */
+@keyframes first_heading_white_text {
+
+  0%,
+  16.667% {
+    opacity: 0;
+  }
+
+  25%,
+  91.667% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes second_heading_gradient {
+
+  0%,
+  16.667% {
+    opacity: 0;
+  }
+
+  33.333%,
+  50% {
+    opacity: 1;
+  }
+
+  66.667%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes second_heading_white_text {
+
+  0%,
+  25% {
+    opacity: 1;
+  }
+
+  33.333%,
+  50% {
+    opacity: 0;
+  }
+
+  58.333%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes third_heading_gradient {
+
+  0%,
+  50% {
+    opacity: 0;
+  }
+
+  66.667%,
+  83.333% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes third_heading_white_text {
+
+  0%,
+  58.333% {
+    opacity: 1;
+  }
+
+  66.667%,
+  83.333% {
+    opacity: 0;
+  }
+
+  91.667%,
+  100% {
+    opacity: 1;
+  }
+}
+
+.heading-line-first>.heading-line-gradient {
+  background-image: linear-gradient(to left, #7071e8, #ed64a6);
+  animation: first_heading_gradient 8s infinite;
+}
+
+.heading-line-first::before {
+  content: "ideas";
+  animation: first_heading_white_text 8s infinite;
+}
+
+.heading-line-second>.heading-line-gradient {
+  background-image: linear-gradient(to left, #38b2ac, #7071e8);
+  animation: second_heading_gradient 8s infinite;
+}
+
+.heading-line-second::before {
+  content: "into ";
+  animation: second_heading_white_text 8s infinite;
+}
+
+.heading-line-third>.heading-line-gradient {
+  background-image: linear-gradient(to left, #7072e8, #7552fe);
+  animation: third_heading_gradient 8s infinite;
+}
+
+.heading-line-third::before {
+  content: "reality";
+  animation: third_heading_white_text 8s infinite;
 }
