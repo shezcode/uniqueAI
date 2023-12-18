@@ -108,6 +108,7 @@ strong {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .main-text {
@@ -117,7 +118,7 @@ strong {
   margin: 1em;
   padding: 20px;
   height: full;
-  width: 400px;
+  width: 40$;
   color: #ffffff;
   max-width: 900px;
   min-height: 20vh;
@@ -146,7 +147,7 @@ strong {
 }
 
 .ai-svg {
-  width: 550px;
+  width: 50%;
   padding: 40px;
 }
 
@@ -387,7 +388,7 @@ h2.text-gradient {
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 80%;
+  width: 60%;
   justify-content: center;
   height: 100%;
   gap: 1em;
@@ -797,11 +798,59 @@ footer {
   margin-top: 1em;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
+  * {
+    box-sizing: border-box;
+  }
 
   .ai-svg {
-    width: 40%;
-    padding: 40px;
+    display: none;
+  }
+
+  label>.carousel {
+    display: none;
+  }
+
+  #about-us>div>div>label {
+    visibility: collapse;
+  }
+
+
+  .pane {
+    width: 80%;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  nav {
+    min-height: 14vh;
+  }
+
+  .cta-button {
+    align-self: center;
+  }
+
+  .carousel {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  .main-section {
+    width: 90%;
+  }
+
+  main {
+    margin-top: 10px;
+  }
+
+  .custom-shape-divider-top-1698056563 {
+    display: none;
   }
 
   .product-svg {
@@ -836,12 +885,49 @@ footer {
     width: 80%;
   }
 
+  .about-section {
+    padding: 0px;
+  }
+
   .product-section {
+    min-height: 15vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    width: 90%;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
+
+  .product-section h2 {
+    margin: 20px;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px;
+    gap: 12px;
+    color: #F0EAD6;
+    border-radius: 12px;
+    border: 2px solid #F0EAD6;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    position: relative;
+  }
+
+  .left-half,
+  .right-half {
+    width: 100%;
+  }
+
+  .product:nth-child(odd) {
+    align-self: end;
+  }
+
+
 
   .pricing-table {
     flex-direction: column;
