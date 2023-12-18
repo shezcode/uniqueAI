@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700&family=Roboto&display=swap"
     rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,6 +23,15 @@
         <li><a href="#pricing" class="nav-link">Pricing</a></li>
       </ul>
       <button class="contact-btn"><a href="#contact">Contact us</a></button>
+      <i data-lucide="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-menu">
+          <line x1="4" x2="20" y1="12" y2="12" />
+          <line x1="4" x2="20" y1="6" y2="6" />
+          <line x1="4" x2="20" y1="18" y2="18" />
+        </svg>
+      </i>
     </nav>
   </header>
   <div class="custom-shape-divider-top-1698056563">
@@ -56,13 +66,16 @@
         <div class="carousel-inner">
           <div class="pane">
             <p>
-              At <b>uniqueAI</b>, we're on a mission to unlock the limitless
+              At <strong>uniqueAI</strong>, we're on a mission to unlock the limitless
               potential of artificial intelligence and data science. As a
               cutting-edge AI-based startup, we specialize in providing
               comprehensive consultation services to businesses,
               organizations, and individuals who are eager to harness the
-              power of AI and data-driven solutions.
+              power of AI and data-driven solutions. <br> Inspire innovation, elevate possibilities, discover the
+              extraordinary with uniqueAI. <br>
+              Ready to embark on your AI journey? <b>Click below to unlock the future!</b>
             </p>
+            <button class="pane-button">Learn more &rarr;</button>
           </div>
           <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
             checked="checked" />
@@ -77,48 +90,12 @@
           <div class="carousel-item">
             <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa" />
           </div>
-          <label for="carousel-3" class="carousel-control prev control-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-chevron-left">
-              <path d="m15 18-6-6 6-6" />
-            </svg>
-          </label>
-          <label for="carousel-2" class="carousel-control next control-1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-chevron-right">
-              <path d="m9 18 6-6-6-6" />
-            </svg>
-          </label>
-          <label for="carousel-1" class="carousel-control prev control-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-chevron-left">
-              <path d="m15 18-6-6 6-6" />
-            </svg>
-          </label>
-          <label for="carousel-3" class="carousel-control next control-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-chevron-right">
-              <path d="m9 18 6-6-6-6" />
-            </svg>
-          </label>
-          <label for="carousel-2" class="carousel-control prev control-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-chevron-left">
-              <path d="m15 18-6-6 6-6" />
-            </svg>
-          </label>
-          <label for="carousel-1" class="carousel-control next control-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-chevron-right">
-              <path d="m9 18 6-6-6-6" />
-            </svg>
-          </label>
+          <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+          <label for="carousel-2" class="carousel-control next control-1">›</label>
+          <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+          <label for="carousel-3" class="carousel-control next control-2">›</label>
+          <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+          <label for="carousel-1" class="carousel-control next control-3">›</label>
           <ol class="carousel-indicators">
             <li>
               <label for="carousel-1" class="carousel-bullet">•</label>
@@ -162,7 +139,7 @@
           <img src="/files/undraw_online_test_re_kyfx.svg" alt="">
         </div>
         <div class="right-half">
-          <h3>Natural Language Processing</h3>
+          <h3 class="">Natural Language Processing</h3>
           <p>
             Our NLP solutions leverage cutting-edge AI algorithms to analyze
             and understand human language. Whether you need sentiment analysis
@@ -234,7 +211,7 @@
             <li>Access to one service of your choice.</li>
             <li>Limited to <strong>10,000</strong> API requests per month.</li>
             <li>Email support</li>
-            <button class="pricing-btn">Sign up!</button>
+            <button class="pricing-btn">Sign up &rarr;</button>
           </ul>
         </div>
         <div class="pricing-card">
@@ -244,7 +221,7 @@
             <li>Combine up to <i>three</i> AI services.</li>
             <li>Increased API limit, <strong>50,000</strong> requests per month.</li>
             <li>Email support 24/7</li>
-            <button class="pricing-btn">Sign up!</button>
+            <button class="pricing-btn">Sign up &rarr;</button>
           </ul>
         </div>
         <div class="pricing-card">
@@ -254,7 +231,7 @@
             <li>Access to <strong>all</strong> of our services.</li>
             <li><strong>Unlimited</strong> API requests.</li>
             <li>Email support 24/7 and a dedicated <strong>account manager</strong>.</li>
-            <button class="pricing-btn">Sign up!</button>
+            <button class="pricing-btn">Sign up &rarr;</button>
           </ul>
         </div>
       </div>
