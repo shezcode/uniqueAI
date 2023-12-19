@@ -127,10 +127,8 @@ strong {
   margin: 1em;
   padding: 20px;
   height: full;
-  width: 40$;
   color: #ffffff;
   max-width: 900px;
-  min-height: 20vh;
 }
 
 .main-text p {
@@ -186,6 +184,10 @@ strong {
   align-items: center;
   min-height: 50vh;
   gap: 1em;
+}
+
+.about-section h2 {
+  margin-top: 0.5em;
 }
 
 hr {
@@ -926,12 +928,8 @@ footer {
     justify-content: center;
     gap: 1em;
     margin-bottom: 20px;
-    margin-top: 20px;
   }
 
-  .product-section h2 {
-    margin: 20px;
-  }
 
   .product {
     display: flex;
