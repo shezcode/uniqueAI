@@ -38,6 +38,10 @@ body {
   fill: #121212;
 }
 
+.hr-mobile {
+  background-color: #121212;
+}
+
 ul {
   list-style: none;
   display: flex;
@@ -75,6 +79,11 @@ i {
 header {
   padding: 0.5em;
   background-color: #121212;
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
@@ -147,7 +156,7 @@ strong {
 }
 
 .ai-svg {
-  width: 50%;
+  width: 30%;
   padding: 40px;
 }
 
@@ -559,15 +568,16 @@ h2.text-gradient {
 
 .contact {
   margin: 2em;
-  background-color: #181818;
   border-radius: 12px;
-  border: 2px solid #6c63ff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 2em;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: linear-gradient(#181818, #181818) padding-box,
+    linear-gradient(135deg, #6c63ff 1%, #8E8FFA 49%, #B971FC 53%, #FAFBEA 100%) border-box;
+  border: 2px solid transparent;
 }
 
 .contact-form {
@@ -588,6 +598,10 @@ textarea {
   padding: 1em;
   color: #fefefe;
   font-size: large;
+}
+
+.contact-form input {
+  border-radius: 8px;
 }
 
 input:focus,
@@ -798,10 +812,24 @@ footer {
   margin-top: 1em;
 }
 
+
 @media screen and (max-width: 768px) {
 
   * {
     box-sizing: border-box;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(135deg, #6c63ff 1%, #8E8FFA 49%, #B971FC 53%, #FAFBEA 100%) 1;
+  }
+
+  .hr-mobile {
+    display: none;
   }
 
   .ai-svg {
@@ -822,11 +850,11 @@ footer {
   }
 
   .logo {
-    width: 100px;
+    width: 140px;
   }
 
   nav {
-    min-height: 14vh;
+    height: 8vh;
   }
 
   .cta-button {
@@ -872,10 +900,6 @@ footer {
     cursor: pointer;
   }
 
-  nav {
-    height: 10vh;
-  }
-
   .pane {
     height: 75%;
     overflow: hidden;
@@ -883,6 +907,10 @@ footer {
 
   .pane-button {
     width: 80%;
+  }
+
+  .about-section h2 {
+    margin-top: 1em;
   }
 
   .about-section {
@@ -928,21 +956,49 @@ footer {
   }
 
 
+  .left-half {
+    border-radius: 12px 12px 0 0;
+    height: 15vh;
+  }
+
+  .right-half {
+    font-size: 16px;
+    border-radius: 12px 12px 12px 12px;
+    min-height: 20vh;
+    align-items: start;
+    justify-content: space-around;
+  }
+
+  .product-btn {
+    align-self: center;
+  }
 
   .pricing-table {
     flex-direction: column;
   }
 
   .pricing-card {
-    width: 100%;
+    width: 90%;
   }
 
   .pricing-card:hover {
     transform: none;
   }
 
+  .header {
+    margin-top: 2em;
+  }
+
+  .contact {
+    margin: 1em;
+    padding: 1em;
+    width: 80%;
+    margin-bottom: 2em;
+  }
+
   .contact-form {
-    width: 100%;
+    width: 90%;
+    gap: 0.5em;
   }
 
   .footer-blog {
