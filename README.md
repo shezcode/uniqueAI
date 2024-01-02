@@ -2,7 +2,7 @@
 
 Welcome to UniqueAI, the one-of-a-kind ~~cash-grabbing~~, original AI startup created by a money-hungry developer who just wants to jump on a bandwagon.
 
-![UniqueAI](/home/shez/daw/actividades-aprendizaje/markup/project1/files/logo.png)
+![UniqueAI](/files/logo.png)
 
 ## Overview
 
